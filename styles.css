@@ -1,0 +1,504 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+body {
+    font-family: sans-serif;
+    line-height: 1.5;
+    font-size: 17px;
+    background-color: #2d2d2d;
+}
+
+p {
+    line-height: 1.5;   
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+h3 {
+    font-size: 18px;
+    line-height: 1.5;   
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.austinlogocontainer {
+    margin-top: 2px;
+    display: grid;
+    grid-template-columns: 1fr;
+    
+    place-items: center; /* sets both justify-items which centers items horizontally whithin their grid cells and align items which centers items vertically within their grid cells at once */
+    text-align: center;
+    height: 65vh;
+    
+    background-image: linear-gradient(rgba(34, 34, 34, 0.705), rgba(34, 34, 34, 0.707)), url('background12.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: #353434;
+    color: #ffffff;
+}
+
+.austinteamlogo {
+    max-width: 250px;
+    width: 80vw;
+    padding-bottom: 10px;
+    padding-top: 40px;
+}
+
+.logocomputers {
+    max-width: 400px;
+    width: 80vw;
+    padding-bottom: 40px;
+    padding-top: 10px;
+}
+
+.introbackground {
+    background-color: #2e2e2e;
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+}
+
+.introduction {
+    font-size: 16px;
+    color: #ffffff;
+    max-width: 840px;
+
+    padding-left: 25px;
+    padding-right: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+
+.teampic img {
+    width: 100vw;
+    max-width: 840px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.productfeaturescontainer {
+    display: grid;
+    place-items: center;
+    background-image: url('paper-texture-1.jpg');
+
+    padding-top: 50px;
+}
+
+.websitefeaturesheading {
+    margin-bottom: 20px;
+    text-align: left;
+    font-weight: bolder;
+    align-items: left;
+    font-size: 18px;
+}
+
+.websitefeaturesheading img {
+    width: 90vw;
+    max-width: 320px;
+}
+
+.productfeatures {
+    
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    margin-right: 15px;
+    max-width: 840px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+}
+
+.icon img {
+    width: 60px; /* Adjust the width of the icon as needed */
+}
+
+.text {
+    padding-left: 20px;
+    padding-bottom: 30px;
+}
+
+.faq {
+    background-color: #2e2e2e;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+}
+
+.faqrow {
+    color: #ffffff;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    max-width: 840px;
+    margin-right: 15px;
+    margin-left: 15px;
+    align-items: center;
+}
+
+.faqrow img {
+    width: 100%;
+    max-width: 840px;
+    align-self: center;
+    padding-bottom: 20px;
+}
+
+.faqrow p {
+    line-height: 1.5;   
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.websitepreviews {
+    border-top-width: 3px;
+    border-top-style: solid;
+    border-top-color: #2d2d2d;
+    
+    background-image: url('abstract-white-canvas-textures-surface.jpg');
+
+    /* 
+    background-image: linear-gradient(rgba(232, 232, 232, 0.6), rgba(233, 233, 233, 0.6)), url('abstract-white-canvas-textures-surface.jpg'); 
+    Overlay and Background image */
+
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center; /* Centers the items vertically */
+
+    padding-bottom: 50px;
+    width: 100%;
+    gap: 0;
+}
+
+.examplesheading img {
+    max-width: 320px;
+    width: 90vw;
+    padding-top: 40px;
+}
+
+.examplesite {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    flex-direction: column;
+    gap: 0;
+    line-height: 0;
+}
+
+.browserimage {
+    width: 95vw;
+    max-width: 700px;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+
+    border-width: 2px;
+    border-style: solid;
+    border-color: #383838;
+    
+    border-bottom-width: 2px;
+}
+
+.templateimage {
+    width: 95vw;
+    max-width: 700px;
+    
+    padding-top: 0;
+    margin-top: 0;
+
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+
+    border-width: 2px;
+    border-style: solid;
+    border-color: #383838;
+
+    border-top-width: 0;
+}
+
+.previewbuttoncontainer {
+    height: 50px;
+    
+    width: 95vw;
+    max-width: 700px;
+    
+    text-align: right;
+    margin-top: 5px;
+}
+
+.previewbutton {
+    display: inline-block; /* this is not a button tag buttons are for javascript and form submit not links to other pages or websites */
+    padding: 10px 20px;
+    background-color: #2c2c2c; /* Green */
+    color: #f8f8f8;
+    
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 400;
+    
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    line-height: 1.5;
+}
+  
+.previewbutton:hover {
+    background-color: #373737;
+}
+
+footer {
+    
+    /* background-color: #1e1e1e; */
+    background-image: url('footer-background.jpg');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.footercontainer {
+    max-width: 840px;
+    color: #dedede;
+    display: flex;
+    margin: 20px;
+    flex-direction: column;
+    place-items: center;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 300;
+    gap: 25px;
+}
+
+.formandcontactflex {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    place-items: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contactrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    place-items: center;
+}
+
+.contacticon {
+    width: 53px;
+    padding-right: 15px;
+    padding-top: 5px;
+}
+
+.copybutton {
+    
+        background-color: #373737;
+        color: #fbfbfb;
+        padding: 10px 14px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        font-size: 14px;
+}
+
+.ig-button,
+.fb-button,
+.fb-messenger-button {
+    display: inline-block;
+    padding: 8px 18px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #fbfbfb;
+    background-color: #373737;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.fb-button {
+    margin-bottom: 10px;
+}
+
+.call-button,
+.text-button,
+.email-button {
+    display: inline-block;
+    padding: 8px 18px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #fbfbfb;
+    background-color: #373737;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .call-button {
+    
+    margin-bottom: 10px;
+  }
+
+  .email-button {
+    margin-bottom: 10px;
+  }
+
+.contacttext {
+    width: 210px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #fbfbfb;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.flexcontact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    place-items: center;
+    gap: 12px;
+    padding-right: 16px;
+}
+
+.contactwrapper {
+    display: flex;
+    justify-content: center; /* Center the flex items horizontally */
+    align-items: flex-start; /* Align the flex items to the top */
+    flex-direction: column;
+    gap: 18px;
+    margin-bottom: 15px;
+}
+
+.contactus img {
+    max-width: 180px;
+    width: 80vw;
+}
+
+
+
+
+
+/* Form container */
+.form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    /* background-color: #f9f9f9; */
+    background-color: #373737;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form input fields */
+input,textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #fbfbfb;
+    font-size: 15px;
+    font-family: sans-serif;
+}
+
+
+/* Submit button #007bff hoveer #0056b3 */
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #006ce0;
+    color: #fbfbfb;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #0057b5;
+}
+
+
+/* Success message */
+#successMessage {
+    display: none;
+    text-align: center;
+    font-weight: bold;
+    color: #006ce0;
+    margin-top: 15px;
+}
+
+
+
+
+
+
+@media screen and (min-width: 900px) {
+    /* .formandcontactflex {
+        
+        display: flex;
+        flex-direction: row;
+        gap: 100px;
+    } */
+
+    .austinlogocontainer {
+        height: 60vh;
+    }
+
+}
+
+
+@media screen and (min-width: 830px) {
+
+    .austinlogocontainer {
+        height: 60vh;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+
+    .row {
+        flex-direction: column; /* Change to column layout for smaller screens */
+        text-align: center;
+    
+    }
+
+    .text {
+        padding-left: 0;
+    }
+
+   
+
+
+}
+
+
