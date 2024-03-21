@@ -75,8 +75,8 @@ h3 {
 
     padding-left: 25px;
     padding-right: 20px;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 
@@ -353,6 +353,18 @@ footer {
     text-decoration: none;
     color: #fbfbfb;
     background-color: #373737;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .less-words-button {
+    display: inline-block;
+    padding: 8px 18px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #fbfbfb;
+    background-color: #d62a2a;
     border: none;
     border-radius: 5px;
     cursor: pointer;
